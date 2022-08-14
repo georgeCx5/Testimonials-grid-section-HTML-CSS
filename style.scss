@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+$moderateViolet: hsl(263, 55%, 52%);
+$opaqueViolet: hsl(268, 53%, 68%);
+$opaqueDarkGrayishBlue: hsl(220, 8%, 58%);
+$veryDarkGrayishBlue: hsl(217, 19%, 35%);
+$veryDarkBlackishBlue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+$opaqueWhite : hsl(0, 0%, 100%, 0.5);
+$lightGray: hsl(0, 0%, 81%);
+$lightGrayishBlue: hsl(210, 46%, 95%);
+
+@mixin profile($image, $borderColor) {
+     background-image: $image;
+     background-size: contain;
+     border: 2px solid $borderColor;
+     border-radius: 50%;
+     overflow: hidden;
+     height: 32px;
+     width: 32px;
+}
+
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     background-color: $lightGrayishBlue;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Barlow Semi Condensed', sans-serif;
+     font-size: 13px;
+     height: 1960px;
+
+     @media screen and (min-width:1440px) {
+          height: 900px;
+     }
+}
+
+.main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 1840px;
+     width: 375px;
+
+     @media screen and (min-width:1440px) {
+          flex-flow: row wrap;
+          justify-content: space-between;
+          height: 575px;
+          width: 1110px;
+     }
+
+     .section-main {
+          // background-color: darkseagreen;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 1400px;
+
+          @media screen and (min-width:1440px) {
+               flex-flow: row wrap;
+               justify-content: space-between;
+               align-content: space-between;
+               height: 575px;
+               width: 825px;
+          }
+
+          .article-Daniel {
+               background: {
+                    color: $moderateViolet;
+                    image: url(./images/bg-pattern-quotation.svg);
+                    position-x: 90%;
+                    repeat: no-repeat;
+               }
+
+               color: $white;
+               border-radius: 8px;
+               height: 445px;
+               width: 325px;
+               padding: 24px 30px;
+
+               @media screen and (min-width:1440px) {
+                    height: 285px;
+                    width: 540px;
+               }
+
+               .profile-Daniel {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    .profile-photo-Daniel {
+                         @include profile(url(./images/image-daniel.jpg), $opaqueViolet);
+                    }
+
+                    .profile-text-Daniel {
+                         font-size: 16px;
+                         margin: 0px 15px;
+
+                         .Daniel-status {
+                              color: $opaqueWhite;
+                         }
+                    }
+               }
+
+               .paragraph-Daniel {
+                    .short-Daniel {
+                         font-size: 20.25px;
+                         font-weight: 600;
+                         margin-bottom: 15px;
+                    }
+
+                    .long-Daniel {
+                         color: $opaqueWhite;
+                         font-size: 13.15px;
+                         line-height: 18px;
+                         padding-right: 15px;
+
+                         @media screen and (min-width: 1440px) {
+                              padding-right: 0px;
+                         }
+                    }
+               }
+          }
+
+          .article-Jonathan {
+               background-color: $veryDarkGrayishBlue;
+               border-radius: 8px;
+               color: $white;
+               height: 240px;
+               width: 325px;
+               padding: 24px 30px;
+
+               @media screen and (min-width:1440px) {
+                    height: 285px;
+                    width: 255px;
+               }
+
+               .profile-Jonathan {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    .profile-photo-Jonathan {
+                         @include profile(url(./images/image-jonathan.jpg), $opaqueWhite);
+                    }
+
+                    .profile-text-Jonathan {
+                         font-size: 16px;
+                         margin: 0px 15px;
+
+                         .Jonathan-status {
+                              color: $opaqueWhite;
+                         }
+                    }
+               }
+
+               .paragraph-Jonathan {
+                    .short-Jonathan {
+                         font-size: 20.25px;
+                         font-weight: 600;
+                         margin-bottom: 15px;
+                    }
+
+                    .long-Jonathan {
+                         color: $opaqueWhite;
+                         font-size: 13.15px;
+                         line-height: 18px;
+                         padding-right: 0px;
+                    }
+               }
+          }
+
+          .article-Jeanette {
+               background-color: $white;
+               border-radius: 8px;
+               color: $veryDarkGrayishBlue;
+               height: 220px;
+               width: 325px;
+               padding: 24px 30px;
+               box-shadow: 0px 7px 29px 0px #64646f33;
+
+               @media screen and (min-width: 1440px) {
+                    height: 270px;
+                    width: 255px;
+               }
+
+               .profile-Jeanette {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    .profile-photo-Jeanette {
+                         @include profile(url(./images/image-jeanette.jpg), $white);
+                    }
+
+                    .profile-text-Jeanette {
+                         font-size: 16px;
+                         margin: 0px 15px;
+
+                         .Jeanette-status {
+                              color: $opaqueDarkGrayishBlue;
+                         }
+                    }
+               }
+
+               .paragraph-Jeanette {
+                    .short-Jeanette {
+                         font-size: 20.25px;
+                         font-weight: 600;
+                         margin-bottom: 15px;
+                    }
+
+                    .long-Jeanette {
+                         color: $opaqueDarkGrayishBlue;
+                         font-size: 13.15px;
+                         line-height: 18px;
+                         padding-right: 0px;
+                    }
+               }
+          }
+
+          .article-Patrick {
+               background-color: $veryDarkBlackishBlue;
+               border-radius: 8px;
+               color: $white;
+               height: 385px;
+               width: 325px;
+               padding: 24px 30px;
+
+               @media screen and (min-width:1440px) {
+                    height: 270px;
+                    width: 540px;
+               }
+
+               .profile-Patrick {
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    .profile-photo-Patrick {
+                         @include profile(url(./images/image-patrick.jpg), $moderateViolet);
+                    }
+
+                    .profile-text-Patrick {
+                         font-size: 16px;
+                         margin: 0px 15px;
+
+                         .Patrick-status {
+                              color: $opaqueWhite;
+                         }
+                    }
+               }
+
+               .paragraph-Patrick {
+                    .short-Patrick {
+                         font-size: 20.25px;
+                         font-weight: 600;
+                         margin-bottom: 15px;
+                    }
+
+                    .long-Patrick {
+                         color: $opaqueWhite;
+                         font-size: 13.15px;
+                         line-height: 18px;
+                         padding-right: 0px;
+
+                         @media screen and (min-width: 1440px) {
+                              padding-right: 5px;
+                         }
+                    }
+               }
+          }
+     }
+
+     .article-Kira {
+          background-color: $white;
+          border-radius: 8px;
+          color: $veryDarkGrayishBlue;
+          height: 440px;
+          width: 325px;
+          padding: 24px 30px;
+          box-shadow: 0px 7px 29px 0px #64646f33;
+
+          @media screen and (min-width: 1440px) {
+               height: 575px;
+               width: 255px;
+          }
+
+          .profile-Kira {
+               display: flex;
+               margin-bottom: 15px;
+
+               .profile-photo-Kira {
+                    @include profile(url(./images/image-kira.jpg), $white);
+               }
+
+               .profile-text-Kira {
+                    font-size: 16px;
+                    margin: 0px 15px;
+
+                    .Kira-status {
+                         color: $opaqueDarkGrayishBlue;
+                    }
+               }
+          }
+
+          .paragraph-Kira {
+               .short-Kira {
+                    font-size: 20.25px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+               }
+
+               .long-Kira {
+                    color: $opaqueDarkGrayishBlue;
+                    font-size: 13.15px;
+                    line-height: 18px;
+                    padding-right: 0px;
+               }
+          }
+     }
+}
+
+/*.attribution {
+     font-size: 11px;
+     text-align: center;
+
+     a {
+          color: hsl(228, 45%, 44%);
+     }
+}*/

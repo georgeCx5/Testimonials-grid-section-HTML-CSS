@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(210deg, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  height: 1960px;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    height: 900px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1840px;
+  width: 375px;
+}
+@media screen and (min-width: 1440px) {
+  .main {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 575px;
+    width: 1110px;
+  }
+}
+.main .section-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 1400px;
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 575px;
+    width: 825px;
+  }
+}
+.main .section-main .article-Daniel {
+  background-color: hsl(263deg, 55%, 52%);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  height: 445px;
+  width: 325px;
+  padding: 24px 30px;
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main .article-Daniel {
+    height: 285px;
+    width: 540px;
+  }
+}
+.main .section-main .article-Daniel .profile-Daniel {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Daniel .profile-Daniel .profile-photo-Daniel {
+  background-image: url(./images/image-daniel.jpg);
+  background-size: contain;
+  border: 2px solid hsl(268deg, 53%, 68%);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+}
+.main .section-main .article-Daniel .profile-Daniel .profile-text-Daniel {
+  font-size: 16px;
+  margin: 0px 15px;
+}
+.main .section-main .article-Daniel .profile-Daniel .profile-text-Daniel .Daniel-status {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.main .section-main .article-Daniel .paragraph-Daniel .short-Daniel {
+  font-size: 20.25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Daniel .paragraph-Daniel .long-Daniel {
+  color: hsla(0deg, 0%, 100%, 0.5);
+  font-size: 13.15px;
+  line-height: 18px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main .article-Daniel .paragraph-Daniel .long-Daniel {
+    padding-right: 0px;
+  }
+}
+.main .section-main .article-Jonathan {
+  background-color: hsl(217deg, 19%, 35%);
+  border-radius: 8px;
+  color: hsl(0deg, 0%, 100%);
+  height: 240px;
+  width: 325px;
+  padding: 24px 30px;
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main .article-Jonathan {
+    height: 285px;
+    width: 255px;
+  }
+}
+.main .section-main .article-Jonathan .profile-Jonathan {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Jonathan .profile-Jonathan .profile-photo-Jonathan {
+  background-image: url(./images/image-jonathan.jpg);
+  background-size: contain;
+  border: 2px solid hsla(0deg, 0%, 100%, 0.5);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+}
+.main .section-main .article-Jonathan .profile-Jonathan .profile-text-Jonathan {
+  font-size: 16px;
+  margin: 0px 15px;
+}
+.main .section-main .article-Jonathan .profile-Jonathan .profile-text-Jonathan .Jonathan-status {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.main .section-main .article-Jonathan .paragraph-Jonathan .short-Jonathan {
+  font-size: 20.25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Jonathan .paragraph-Jonathan .long-Jonathan {
+  color: hsla(0deg, 0%, 100%, 0.5);
+  font-size: 13.15px;
+  line-height: 18px;
+  padding-right: 0px;
+}
+.main .section-main .article-Jeanette {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  color: hsl(217deg, 19%, 35%);
+  height: 220px;
+  width: 325px;
+  padding: 24px 30px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main .article-Jeanette {
+    height: 270px;
+    width: 255px;
+  }
+}
+.main .section-main .article-Jeanette .profile-Jeanette {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Jeanette .profile-Jeanette .profile-photo-Jeanette {
+  background-image: url(./images/image-jeanette.jpg);
+  background-size: contain;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+}
+.main .section-main .article-Jeanette .profile-Jeanette .profile-text-Jeanette {
+  font-size: 16px;
+  margin: 0px 15px;
+}
+.main .section-main .article-Jeanette .profile-Jeanette .profile-text-Jeanette .Jeanette-status {
+  color: hsl(220deg, 8%, 58%);
+}
+.main .section-main .article-Jeanette .paragraph-Jeanette .short-Jeanette {
+  font-size: 20.25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Jeanette .paragraph-Jeanette .long-Jeanette {
+  color: hsl(220deg, 8%, 58%);
+  font-size: 13.15px;
+  line-height: 18px;
+  padding-right: 0px;
+}
+.main .section-main .article-Patrick {
+  background-color: hsl(219deg, 29%, 14%);
+  border-radius: 8px;
+  color: hsl(0deg, 0%, 100%);
+  height: 385px;
+  width: 325px;
+  padding: 24px 30px;
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main .article-Patrick {
+    height: 270px;
+    width: 540px;
+  }
+}
+.main .section-main .article-Patrick .profile-Patrick {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Patrick .profile-Patrick .profile-photo-Patrick {
+  background-image: url(./images/image-patrick.jpg);
+  background-size: contain;
+  border: 2px solid hsl(263deg, 55%, 52%);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+}
+.main .section-main .article-Patrick .profile-Patrick .profile-text-Patrick {
+  font-size: 16px;
+  margin: 0px 15px;
+}
+.main .section-main .article-Patrick .profile-Patrick .profile-text-Patrick .Patrick-status {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+.main .section-main .article-Patrick .paragraph-Patrick .short-Patrick {
+  font-size: 20.25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main .section-main .article-Patrick .paragraph-Patrick .long-Patrick {
+  color: hsla(0deg, 0%, 100%, 0.5);
+  font-size: 13.15px;
+  line-height: 18px;
+  padding-right: 0px;
+}
+@media screen and (min-width: 1440px) {
+  .main .section-main .article-Patrick .paragraph-Patrick .long-Patrick {
+    padding-right: 5px;
+  }
+}
+.main .article-Kira {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 8px;
+  color: hsl(217deg, 19%, 35%);
+  height: 440px;
+  width: 325px;
+  padding: 24px 30px;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+}
+@media screen and (min-width: 1440px) {
+  .main .article-Kira {
+    height: 575px;
+    width: 255px;
+  }
+}
+.main .article-Kira .profile-Kira {
+  display: flex;
+  margin-bottom: 15px;
+}
+.main .article-Kira .profile-Kira .profile-photo-Kira {
+  background-image: url(./images/image-kira.jpg);
+  background-size: contain;
+  border: 2px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+}
+.main .article-Kira .profile-Kira .profile-text-Kira {
+  font-size: 16px;
+  margin: 0px 15px;
+}
+.main .article-Kira .profile-Kira .profile-text-Kira .Kira-status {
+  color: hsl(220deg, 8%, 58%);
+}
+.main .article-Kira .paragraph-Kira .short-Kira {
+  font-size: 20.25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.main .article-Kira .paragraph-Kira .long-Kira {
+  color: hsl(220deg, 8%, 58%);
+  font-size: 13.15px;
+  line-height: 18px;
+  padding-right: 0px;
+}
+
+/*.attribution {
+     font-size: 11px;
+     text-align: center;
+
+     a {
+          color: hsl(228, 45%, 44%);
+     }
+}*//*# sourceMappingURL=style.css.map */
